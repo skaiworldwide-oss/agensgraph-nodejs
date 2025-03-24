@@ -1,5 +1,5 @@
 {
-  "name": "@bitnine-oss/ag-driver",
+  "name": "@skaiworldwide-oss/ag-driver",
   "version": "0.1.0",
   "description": "AgensGraph client for node.js",
   "main": "./build",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitnine-oss/agensgraph-nodejs.git"
+    "url": "git+https://github.com/skaiworldwide-oss/agensgraph-nodejs.git"
   },
   "keywords": [
     "AgensGraph",
@@ -21,9 +21,9 @@
   "author": "Alex Kwak <ms.kwak@bitnine.net> (https://bitnine.net)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/bitnine-oss/agensgraph-nodejs/issues"
+    "url": "https://github.com/skaiworldwide-oss/agensgraph-nodejs/issues"
   },
-  "homepage": "https://github.com/bitnine-oss/agensgraph-nodejs#readme",
+  "homepage": "https://github.com/skaiworldwide-oss/agensgraph-nodejs#readme",
   "dependencies": {
     "lodash": "^4.17.20",
     "pg": ">= 6.1.2"
