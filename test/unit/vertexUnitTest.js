@@ -6,6 +6,7 @@ const g = require('../../lib/graph.js');
 describe('VertexUnitTest suite', function () {
 
     const vertex = agens.parse('v[7.9]{"s": "", "i": 0, "b": false, "a": [], "o": {}}', {startRule: '_Vertex'});
+    const koreanVertex = agens.parse('한국어[11.1]{"s": "", "i": 0, "b": false, "a": [], "o": {}}', {startRule: '_Vertex'});
 
     it('Test Label', function (done) {
         assert.strictEqual(vertex.label, 'v');
@@ -16,6 +17,11 @@ describe('VertexUnitTest suite', function () {
         assert.deepStrictEqual(vertex.id, new g.GraphId(7, 9));
         done();
     });
+
+    it('Test Vetex ID (for Korean characters label node)', function (done) {
+        assert.deepStrictEqual(koreanVertex.id, new g.GraphId(11, 1));
+        done();
+    })
 
     it('Test Properties', function (done) {
         assert.strictEqual(vertex.props.s, '');
