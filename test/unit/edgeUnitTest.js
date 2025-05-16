@@ -6,6 +6,7 @@ const g = require('../../lib/graph.js');
 describe('EdgeUnitTest suite', function () {
 
     const edge = agens.parse('e[5.7][7.3,7.9]{"s": "", "i": 0, "b": false, "a": [], "o": {}}', {startRule: '_Edge'});
+    const koreanEdge = agens.parse('한국어[11.1][7.3,7.9]{"s": "", "i": 0, "b": false, "a": [], "o": {}}', {startRule: '_Edge'});
 
     it('Test Label', function (done) {
         assert.strictEqual(edge.label, 'e');
@@ -19,6 +20,11 @@ describe('EdgeUnitTest suite', function () {
 
     it('Test Start ID', function (done) {
         assert.deepStrictEqual(edge.start, new g.GraphId(7, 3));
+        done();
+    });
+
+    it('Test Start ID (for Korean characters label edge)', function (done) {
+        assert.deepStrictEqual(koreanEdge.start, new g.GraphId(7, 3));
         done();
     });
 
