@@ -1,6 +1,6 @@
 {
-  "name": "@skaiworldwide-oss/ag-driver",
-  "version": "0.1.0",
+  "name": "@skaiworldwide/ag-driver",
+  "version": "0.1.1",
   "description": "AgensGraph client for node.js",
   "main": "./build",
   "scripts": {
@@ -18,7 +18,7 @@
     "graph",
     "driver"
   ],
-  "author": "Alex Kwak <ms.kwak@bitnine.net> (https://bitnine.net)",
+  "author": "Umar Hayat <umar.hayat@skaiworldwide.com> (https://skaiworldwide.com)",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/skaiworldwide-oss/agensgraph-nodejs/issues"
