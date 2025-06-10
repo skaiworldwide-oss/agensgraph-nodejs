@@ -1,6 +1,6 @@
 {
   "name": "@skaiworldwide/ag-driver",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "AgensGraph client for node.js",
   "main": "./build",
   "scripts": {
