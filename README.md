@@ -1,6 +1,6 @@
 # AgensGraph client for Node.js
 
-https://www.npmjs.com/package/@bitnine-oss/ag-driver
+https://www.npmjs.com/package/@skaiworldwide/ag-driver
 
 AgensGraph client for node.js. To be used concurrently with [node-postgres](https://github.com/brianc/node-postgres).
 Adds AgensGraph compatibility for node-postgres. Support for the Cypher query language, and vertex, edge and path graph
@@ -12,10 +12,10 @@ data types.
 
 ```sh
 # if you are using yarn
-$ yarn add pg @bitnine-oss/ag-driver
+$ yarn add pg @skaiworldwide/ag-driver
 
 # or npm
-$ npm install pg @bitnine-oss/ag-driver
+$ npm install pg @skaiworldwide/ag-driver
 ```
 
 ## Connection
@@ -27,7 +27,7 @@ Connecting programmatically can be done by passing an object with config values 
 client.connect() to establish a connection:
 
 ```js
-var ag = require('@bitnine-oss/ag-driver');
+var ag = require('@skaiworldwide/ag-driver');
 var config = {
     user: 'username',
     password: 'password',
@@ -53,7 +53,7 @@ following examples illustrate the different possible methods of querying.
 Users can retrieve Cypher data by passing text directly to client.query():
 
 ```js
-var ag = require('@bitnine-oss/ag-driver');
+var ag = require('@skaiworldwide/ag-driver');
 const client = new ag.Client(Config);
 
 client.connect();
@@ -130,7 +130,7 @@ To create data in AgensGraph, the query() API function is again used to query th
 creating Cypher data by passing text directly to client.query():
 
 ```js
-var ag = require('@bitnine-oss/ag-driver');
+var ag = require('@skaiworldwide/ag-driver');
 const client = new ag.Client(Config);
 
 client.connect();
