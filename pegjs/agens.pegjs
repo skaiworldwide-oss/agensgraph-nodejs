@@ -45,7 +45,7 @@ _Edge = label:Id "[" id:GraphId "]" "[" from:GraphId "," to:GraphId  "]" props:O
 
 _Path = "[" _Vertex "," _Edge "," _Vertex ("," _Edge "," _Vertex)* "]"  {  return mkPath(); }
 
-Id = ([_\$D][_\$w]*) { return text(); }
+Id = (![\[\]{}(),:. \t\n\r] .)+ { return text(); }
 
 GraphId = graphid:Number { return num2GraphId(text());}
 
